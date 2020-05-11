@@ -10,8 +10,15 @@ export default function MultiStepForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    occupation: "",
     email: "",
+    marital_status: "",
+    occupation: "",
+    favorite_framework: "",
+    frameworks: [
+      { name: "React", id: "" + Math.random() },
+      { name: "Angular", id: "" + Math.random() },
+      { name: "Vue", id: "" + Math.random() },
+    ],
     experience: "",
     website: "",
   });
